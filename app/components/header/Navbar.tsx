@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import logoImg from "@/public/images/red-304573_1280.webp";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
@@ -33,7 +35,7 @@ const Navbar = () => {
   return (
     <header className="navbar bg-[#DCECF1]">
       <div className="max-w-[1400px] mx-auto w-full p-3 flex justify-between items-center">
-        <img src="/public/images/Logo.svg" alt="" />
+        <Image src={logoImg} width={40} alt={""} />
         <ul className="menu hidden md:flex gap-5 text-[#1A093F] font-medium">
           {navmenu.map((item, index) => (
             <li key={index}>
