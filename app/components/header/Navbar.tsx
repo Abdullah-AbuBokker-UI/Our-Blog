@@ -7,22 +7,22 @@ import { RxCross1 } from "react-icons/rx";
 const navmenu = [
   {
     id: 1,
-    text: "Doctors",
+    text: "Home",
     link: "/",
   },
   {
     id: 2,
-    text: "Hospital",
+    text: "Blog",
     link: "/hospital",
   },
   {
     id: 3,
-    text: "Blog",
+    text: "About",
     link: "/blog",
   },
   {
     id: 4,
-    text: "Support",
+    text: "Contact",
     link: "/support",
   },
 ];
