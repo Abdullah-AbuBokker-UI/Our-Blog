@@ -4,6 +4,7 @@ import logoImg from "@/public/images/red-304573_1280.webp";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
+import Link from "next/link";
 const navmenu = [
   {
     id: 1,
@@ -13,17 +14,17 @@ const navmenu = [
   {
     id: 2,
     text: "Blog",
-    link: "/hospital",
+    link: "/blog",
   },
   {
     id: 3,
     text: "About",
-    link: "/blog",
+    link: "/about",
   },
   {
     id: 4,
     text: "Contact",
-    link: "/support",
+    link: "/contact",
   },
 ];
 const Navbar = () => {
@@ -38,14 +39,14 @@ const Navbar = () => {
         <Image src={logoImg} width={40} alt={""} />
         <ul className="menu hidden md:flex gap-5 text-[#1A093F] font-medium">
           {navmenu.map((item, index) => (
-            <li key={index}>
-              <a
+            <Link href={item.link}>
+              <li
+                key={index}
                 className="hover:text-[#159FED] duration-100 transition-all "
-                href={item.link}
               >
                 {item.text}
-              </a>
-            </li>
+              </li>
+            </Link>
           ))}
         </ul>
         <div className="btn-group gap-3 hidden md:flex">
