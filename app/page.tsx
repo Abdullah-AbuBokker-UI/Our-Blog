@@ -5,8 +5,8 @@ import Footer from "./ui/Footer";
 export default function Error() {
   return (
     <>
+      <Navbar />
       <Center>
-        <Navbar />
         <div className="relative max-w-6xl px-4 mx-auto my-6">
           <div className="max-w-5xl mx-auto text-center">
             <span className="text-lg font-extrabold text-blue-500 dark:text-blue-400">
@@ -602,8 +602,8 @@ export default function Error() {
             </div>
           </div>
         </section>
-        <Footer />
       </Center>
+      <Footer />
     </>
   );
 }
