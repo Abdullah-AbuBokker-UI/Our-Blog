@@ -26,6 +26,11 @@ const navmenu = [
     text: "Contact",
     link: "/contact",
   },
+  {
+    id: 5,
+    text: "Table",
+    link: "/table",
+  },
 ];
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
