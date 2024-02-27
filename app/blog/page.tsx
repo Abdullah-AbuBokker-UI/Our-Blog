@@ -2,6 +2,7 @@ import React from "react";
 import Center from "../ui/Center";
 import Navbar from "../components/header/Navbar";
 import Footer from "../ui/Footer";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -21,7 +22,7 @@ const page = () => {
             </div>
             <div>
               <div className="grid grid-cols-1 lg:grid-cols-[30%,1fr]  gap-x-6 gap-y-4 mb-6">
-                <img
+                <Image
                   className="object-cover w-full rounded-md lg:w-96 h-96"
                   src="https://i.postimg.cc/0jcRHbdr/pexels-pixabay-40751.jpg "
                   alt=" "
@@ -56,7 +57,7 @@ const page = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-[30%,1fr]   gap-x-6 gap-y-4  mb-6">
-                <img
+                <Image
                   className="object-cover w-full rounded-md lg:w-96 h-96"
                   src="https://i.postimg.cc/rpbTSLyM/pexels-andrea-piacquadio-3760263.jpg "
                   alt=" "
@@ -91,7 +92,7 @@ const page = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-[30%,1fr]   gap-x-6 gap-y-4  mb-6">
-                <img
+                <Image
                   className="object-cover w-full rounded-md lg:w-96 h-96"
                   src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg"
                   alt=" "
@@ -126,7 +127,7 @@ const page = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-[30%,1fr]   gap-x-6 gap-y-4  mb-6">
-                <img
+                <Image
                   className="object-cover w-full rounded-md lg:w-96 h-96"
                   src="https://i.postimg.cc/fbT9FYhB/pexels-stijn-dijkstra-2583852.jpg"
                   alt=" "

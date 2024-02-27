@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/header/Navbar";
 import Center from "../ui/Center";
 import Footer from "../ui/Footer";
+import Image from "next/image";
+import about from "@/public/images/pexels-andrea-piacquadio-3760263.jpg";
 
 const page = () => {
   return (
@@ -13,8 +15,8 @@ const page = () => {
             <div className="flex flex-wrap ">
               <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
                 <div className="relative lg:max-w-md">
-                  <img
-                    src="https://i.postimg.cc/rF0MKfBV/pexels-andrea-piacquadio-3760263.jpg"
+                  <Image
+                    src={about}
                     alt="aboutimage"
                     className="relative z-10 object-cover w-full rounded h-96"
                   />
